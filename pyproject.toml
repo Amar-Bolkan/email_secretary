@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "email_secretary"
+dynamic = ["version"]
+description = "Locally running agent handling outlook meetings etc."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+authors = [{name = "ab", email = "amar.bolkan@gmail.com"}]
+keywords = ['nbdev']
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+]
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/Amar-Bolkan/email_secretary"
+Documentation = "https://Amar-Bolkan.github.io/email_secretary/"
+
+[project.entry-points.nbdev]
+email_secretary = "email_secretary._modidx:d"
+
+[tool.setuptools.dynamic]
+version = {attr = "email_secretary.__version__"}
+
+[tool.setuptools.packages.find]
+include = ["email_secretary"]
+
+[tool.nbdev]

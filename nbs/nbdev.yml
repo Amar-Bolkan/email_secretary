@@ -1,0 +1,14 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "email_secretary"
+  site-url: "https://Amar-Bolkan.github.io/email_secretary"
+  description: ""
+  repo-branch: main
+  repo-url: "https://github.com/Amar-Bolkan/email_secretary"
+
+format-links:
+  - html
+  - format: commonmark
+    text: Markdown
